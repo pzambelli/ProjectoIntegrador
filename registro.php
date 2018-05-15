@@ -90,10 +90,9 @@
       <div class="area">
 
           <form role="form" action="registro.php" method="post" enctype="multipart/form-data">
-
-              <div>
+            
                 <?php if (huboErrores($errores)) : ?>
-                    <div class="alert alert-danger">
+                    <div id="errores" class="alert alert-danger">
                       <ul>
                         <?php foreach($errores as $bolsaDeErrores) : ?>
                             <?php foreach($bolsaDeErrores as $error) : ?>
@@ -103,7 +102,6 @@
                       </ul>
                     </div>
                 <?php endif; ?>
-              </div>
 
             <div>
             <label for="nombre">Nombre</label>
