@@ -73,6 +73,10 @@ main .texto {
   top: 160px;
 }
 
+#errores{
+  width: 100%;
+}
+
 form{
   overflow: hidden;
 }
