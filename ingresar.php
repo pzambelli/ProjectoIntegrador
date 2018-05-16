@@ -1,5 +1,8 @@
 <?php
-
+    session_start();
+    if($_SESSION["registrado]{
+    header("Location: paginaPrincipal.html");
+    }
     require_once "funciones/funcionesUsuarios.php";
 
     $errores = [
@@ -25,6 +28,7 @@
        if ($usuario) {
         $passwordValidado = password_verify($_POST["contraseña"], $usuario["contrasena"]);
         if ($passwordValidado) {
+          $_SESSION["registrado"]=true;
           header("Location: paginaPrincipal.html");
           die();
         } else {
