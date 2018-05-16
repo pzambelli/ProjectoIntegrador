@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if($_SESSION["registrado]{
+    if($_SESSION["registrado"]){
     header("Location: paginaPrincipal.html");
     }
     require_once "funciones/funcionesUsuarios.php";
